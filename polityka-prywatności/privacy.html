@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności - Extra Wikipedia Pro</title>
+    <style>
+        /* Spójne style z Twoim plikiem style.css */
+        :root {
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-color: #1c1e21;
+            --accent-color: #007bff;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #18191a;
+            --card-bg: #242526;
+            --text-color: #e4e6eb;
+            --accent-color: #4599ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 { color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; }
+        h2 { color: var(--accent-color); margin-top: 25px; font-size: 1.3rem; }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body data-theme="light">
+
+    <div class="container">
+        <a href="../index.html" class="back-button">← Powrót do wyszukiwarki</a>
+
+        <h1>Polityka Prywatności</h1>
+        <p>Niniejsza strona opisuje zasady przetwarzania informacji w aplikacji <strong>Extra Wikipedia Pro</strong>.</p>
+
+        <h2>1. Dane osobowe</h2>
+        <p>Aplikacja <strong>nie zbiera</strong>, nie przechowuje ani nie przesyła żadnych danych osobowych użytkowników na zewnętrzne serwery, z wyjątkiem zapytań wysyłanych bezpośrednio do oficjalnego API Wikipedii w celu wyświetlenia wyników wyszukiwania.</p>
+
+        <h2>2. Zapytania do API</h2>
+        <p>Podczas wyszukiwania hasła, Twoje zapytanie oraz wybrany język są przesyłane do serwerów Wikimedia Foundation (Wikipedia). Wikimedia może zbierać anonimowe dane statystyczne zgodnie z własną polityką prywatności.</p>
+
+        <h2>3. Local Storage i Ustawienia</h2>
+        <p>Aplikacja może wykorzystywać mechanizm <em>Local Storage</em> Twojej przeglądarki do zapisywania preferencji, takich jak:</p>
+        <ul>
+            <li>Wybrany motyw (Jasny / Nocny).</li>
+            <li>Ostatnio wybrany język interfejsu.</li>
+        </ul>
+        <p>Dane te pozostają wyłącznie na Twoim urządzeniu i nie są nam udostępniane.</p>
+
+        <h2>4. Formularz Kontaktowy</h2>
+        <p>Dane wpisane w formularzu kontaktowym (jeśli dotyczy) są wykorzystywane wyłącznie w celu udzielenia odpowiedzi na Twoją wiadomość i nie są udostępniane osobom trzecim.</p>
+
+        <h2>5. Zmiany w polityce</h2>
+        <p>Zastrzegamy sobie prawo do aktualizacji niniejszej polityki w dowolnym momencie. Zmiany wchodzą w życie z dniem ich opublikowania na tej stronie.</p>
+
+        <footer>
+            &copy; 2026 Extra Wikipedia Pro. Materiały z Wikipedii są dostępne na licencji CC BY-SA.
+        </footer>
+    </div>
+
+    <script>
+        // Prosta skrypt do zachowania motywu z poprzedniej strony (jeśli używasz localStorage)
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.body.setAttribute('data-theme', currentTheme);
+    </script>
+</body>
+</html>
